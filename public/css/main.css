@@ -10,9 +10,17 @@
   padding:0;
 }
 
+.p-l-0{
+  padding-left: 0;
+}
+
 .articleClass {
   list-style: none;
   padding: 20px;
   box-shadow: 10px 15px 42px -23px rgba(0,0,0,0.75);
   margin-top: 40px;
+}
+
+.m-l-10px{
+  margin-left: 10px;
 }

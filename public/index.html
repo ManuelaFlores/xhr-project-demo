@@ -21,11 +21,14 @@
           <label for="search-keyword" class="d-block text-center">¿Qué buscamos?</label>
           <input id="search-keyword" class="form-control w-100" type="text" name="search-keyword" placeholder="e.g  Android" required>
         </div>
-        <div class="form-group col-12 d-flex justify-content-center ">
-            <button id="submit-btn" type="submit" class="btn btn-dark">Submit</button>
-
+        <div class="row d-flex justify-content-center">
+        <div class="form-group col-6 col-sm-3 col-lg-2 d-flex justify-content-center p-l-0 ">
+            <button id="submit-btn-xhr" type="submit" class="btn btn-dark">Submit XHR</button>
         </div>
-
+        <div class="form-group col-6 col-sm-3 col-lg-2 d-flex justify-content-center p-l-0 ">
+          <button id="submit-btn-fetch" type="submit" class="btn btn-dark">Submit FETCH</button>
+      </div>
+</div>
        
       </form>
     </div>
