@@ -36,8 +36,8 @@ btnFetch.addEventListener('click', function(event) {
 // definiendo la función getNews:
 function getNews() {
   const articleRequest = new XMLHttpRequest();
-  articleRequest.onreadystatechange = function() {  
-    if (articleRequest.readyState === 4 && articleRequest.status === 200) { 
+  articleRequest.onreadystatechange = function() {
+    if (articleRequest.readyState === 4 && articleRequest.status === 200) {
       const data = JSON.parse(this.responseText);
       console.log(data);
       articleRequest.onload = addNews(data);
@@ -54,7 +54,7 @@ function handleError() {
 };
 
 // definiendo la función addNews();
-function addNews(data) {  
+function addNews(data) {
   const article = data.response.docs[0];
   console.log(article);
   const title = article.headline.main;
@@ -67,6 +67,6 @@ function addNews(data) {
   <p class="text-justify">
    ${snippet}
   </p>
-</li>`; 
+</li>`;
   ul.innerHTML = template;
 };
